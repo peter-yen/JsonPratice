@@ -1,0 +1,6 @@
+framework module Pods_JsonPratice {
+  umbrella header "Pods-JsonPratice-umbrella.h"
+
+  export *
+  module * { export * }
+}
