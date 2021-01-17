@@ -3,17 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2E35457F113B006FDB1A9185 /* Pods_JsonPratice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078DF5EFA50C83670A937B34 /* Pods_JsonPratice.framework */; };
+		89D7556325B48646006E2900 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D7556225B48646006E2900 /* EmailViewController.swift */; };
 		89E2DE4625A75A970072E81A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E2DE4525A75A970072E81A /* AppDelegate.swift */; };
 		89E2DE4A25A75A970072E81A /* JsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E2DE4925A75A970072E81A /* JsonViewController.swift */; };
 		89E2DE4F25A75A9B0072E81A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89E2DE4E25A75A9B0072E81A /* Assets.xcassets */; };
 		89E2DE5225A75A9B0072E81A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E2DE5025A75A9B0072E81A /* LaunchScreen.storyboard */; };
 		89E2DE5D25A75A9C0072E81A /* JsonPraticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E2DE5C25A75A9C0072E81A /* JsonPraticeTests.swift */; };
 		89E2DE6825A75A9C0072E81A /* JsonPraticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E2DE6725A75A9C0072E81A /* JsonPraticeUITests.swift */; };
+		89E4A8CC25AF3DB6005BA523 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89E4A8CB25AF3DB6005BA523 /* GoogleService-Info.plist */; };
+		89E4A8E725AF48A6005BA523 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E4A8E625AF48A6005BA523 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,7 @@
 /* Begin PBXFileReference section */
 		078DF5EFA50C83670A937B34 /* Pods_JsonPratice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JsonPratice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2508216796DF6C50BF13AEE1 /* Pods-JsonPratice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonPratice.release.xcconfig"; path = "Target Support Files/Pods-JsonPratice/Pods-JsonPratice.release.xcconfig"; sourceTree = "<group>"; };
+		89D7556225B48646006E2900 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 		89E2DE4225A75A970072E81A /* JsonPratice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsonPratice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E2DE4525A75A970072E81A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89E2DE4925A75A970072E81A /* JsonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +52,8 @@
 		89E2DE6325A75A9C0072E81A /* JsonPraticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JsonPraticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E2DE6725A75A9C0072E81A /* JsonPraticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonPraticeUITests.swift; sourceTree = "<group>"; };
 		89E2DE6925A75A9C0072E81A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89E4A8CB25AF3DB6005BA523 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		89E4A8E625AF48A6005BA523 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		A20234A9CDD4A436AD408B82 /* Pods-JsonPratice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonPratice.debug.xcconfig"; path = "Target Support Files/Pods-JsonPratice/Pods-JsonPratice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,7 +89,6 @@
 				A20234A9CDD4A436AD408B82 /* Pods-JsonPratice.debug.xcconfig */,
 				2508216796DF6C50BF13AEE1 /* Pods-JsonPratice.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -122,9 +127,12 @@
 			children = (
 				89E2DE4525A75A970072E81A /* AppDelegate.swift */,
 				89E2DE4925A75A970072E81A /* JsonViewController.swift */,
+				89D7556225B48646006E2900 /* EmailViewController.swift */,
+				89E4A8E625AF48A6005BA523 /* Model.swift */,
 				89E2DE4E25A75A9B0072E81A /* Assets.xcassets */,
 				89E2DE5025A75A9B0072E81A /* LaunchScreen.storyboard */,
 				89E2DE5325A75A9B0072E81A /* Info.plist */,
+				89E4A8CB25AF3DB6005BA523 /* GoogleService-Info.plist */,
 			);
 			path = JsonPratice;
 			sourceTree = "<group>";
@@ -254,6 +262,7 @@
 			files = (
 				89E2DE5225A75A9B0072E81A /* LaunchScreen.storyboard in Resources */,
 				89E2DE4F25A75A9B0072E81A /* Assets.xcassets in Resources */,
+				89E4A8CC25AF3DB6005BA523 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,8 +329,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89E4A8E725AF48A6005BA523 /* Model.swift in Sources */,
 				89E2DE4A25A75A970072E81A /* JsonViewController.swift in Sources */,
 				89E2DE4625A75A970072E81A /* AppDelegate.swift in Sources */,
+				89D7556325B48646006E2900 /* EmailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
